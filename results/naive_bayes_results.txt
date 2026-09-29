@@ -1,0 +1,20 @@
+Traditional NLP Model Comparison
+
+Dataset:
+280,942 emails
+
+Features:
+TF-IDF
+100,000 maximum features
+
+Train/Test:
+80% / 20%
+Random state: 42
+Stratified: Yes
+
+
+Model                 Accuracy    Phishing Recall    Phishing F1
+
+Logistic Regression   97.02%      94%               0.95
+Linear SVM             97.31%      93%               0.95
+Naive Bayes            91.79%      72%               0.81

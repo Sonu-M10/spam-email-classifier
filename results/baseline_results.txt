@@ -1,0 +1,32 @@
+Baseline Model: TF-IDF + Logistic Regression
+
+Dataset:
+- 280,942 emails
+- 3 classes: Legitimate, Phishing, Spam
+
+Train/Test Split:
+- Training: 224,753
+- Testing: 56,189
+- Test size: 20%
+- Random state: 42
+- Stratified split: Yes
+
+TF-IDF:
+- Max features: 100,000
+
+Model:
+- Logistic Regression
+- max_iter: 1000
+
+Results:
+- Accuracy: 97.02%
+
+Classification Report:
+- Legitimate: Precision 0.99 | Recall 0.98 | F1 0.98
+- Phishing:   Precision 0.96 | Recall 0.94 | F1 0.95
+- Spam:       Precision 0.96 | Recall 0.97 | F1 0.96
+
+Confusion Matrix:
+[[25125    36   479]
+ [   16  8030   523]
+ [  357   263 21360]]
